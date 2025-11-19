@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
-  <displayName>WinGet-AutoUpdate-Configurator</displayName>
-  <description>WinGet-AutoUpdate-Configurator</description>
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.6" schemaVersion="1.0">
+  <displayName>WinGet-AutoUpdate-aaS</displayName>
+  <description>WinGet-AutoUpdate-aaS</description>
   <resources>
     <stringTable>
-      <string id="WAUC">Winget-AutoUpdate-Configurator</string>
+      <string id="WAUC">Winget-AutoUpdate-aaS</string>
       <string id="Configuration">Configuration</string>
       <string id="Mods">Mods</string>
       <string id="SupportedOn">Windows 10 and Windows 11</string>
@@ -51,8 +51,6 @@ If you do not configure or disable this policy Winget-Autoupdate will not run on
 
 If you enable or not configure this policy Winget-Autoupdate will not run after installation. If you disable this policy Winget-AutoUpdate will run after each installation.</string>
 
-      <string id="ReinstallOnRefreshdisplayName">Reinstall on Policy Update</string>
-      <string id="ReinstallOnRefreshexplainText">When enabled the Winget-Autoupdate-Configurator will reinstall WAU everytime when a policy is changed. This can be used to remove shortcuts.</string>
 
       <string id="InstallUserContextdisplayName">Install in usercontext</string>
       <string id="InstallUserContextexplainText">Install WAU with system and user context executions. This can be used to update software that is only installed within the user profile.</string>
@@ -83,7 +81,7 @@ Please leave this unconfigured or disabled if you use the Modification Configura
             <textBox refId="UpdatesAtTime"><label>Time</label><defaultValue>6am</defaultValue></textBox>
       </presentation>
       <presentation id="ModsPathPresentation">
-            <textBox refId="ModsPath"><label>Path</label><defaultValue></defaultValue></textBox>
+            <textBox refId="ModsPath"><label>Path</label><defaultValue/></textBox>
       </presentation>
       <presentation id="ListPresentation">
         <listBox refId="List">List</listBox>

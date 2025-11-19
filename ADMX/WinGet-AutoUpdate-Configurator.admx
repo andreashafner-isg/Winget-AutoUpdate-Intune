@@ -1,4 +1,4 @@
-﻿<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.04" xsi:schemaLocation="" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/PolicyDefinitions">
+﻿<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.6" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/PolicyDefinitions">
 	<policyNamespaces>
 		<target prefix="WinGet-AutoUpdate-Configurator" namespace="WinGet-AutoUpdate-Configurator.Configuration.Policies"/>
 	</policyNamespaces>
@@ -32,7 +32,7 @@
 	<parentCategory ref="Configuration"/>
 	<supportedOn ref="SupportedOn"/>
 	<elements>
-        <list id="List" key="SOFTWARE\Policies\weatherlights.com\Winget-AutoUpdate\List" valuePrefix=""/>
+        <list id="List" key="SOFTWARE\Policies\weatherlights.com\Winget-AutoUpdate\List"/>
 	</elements>
 </policy>
 
@@ -161,17 +161,6 @@
 </policy>
 
 <policy name="Winget-AutoUpdate-DoNotUpdate" class="Machine" displayName="$(string.DoNotUpdatedisplayName)" explainText="$(string.DoNotUpdateexplainText)" key="SOFTWARE\Policies\weatherlights.com\Winget-AutoUpdate" valueName="DoNotUpdate">
-	<parentCategory ref="Configuration"/>
-	<supportedOn ref="SupportedOn"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-</policy>
-
-<policy name="Winget-AutoUpdate-ReinstallOnRefresh" class="Machine" displayName="$(string.ReinstallOnRefreshdisplayName)" explainText="$(string.ReinstallOnRefreshexplainText)" key="SOFTWARE\Policies\weatherlights.com\Winget-AutoUpdate" valueName="ReinstallOnRefresh">
 	<parentCategory ref="Configuration"/>
 	<supportedOn ref="SupportedOn"/>
       <enabledValue>
