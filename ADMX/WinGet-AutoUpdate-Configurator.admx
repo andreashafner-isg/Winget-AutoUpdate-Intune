@@ -32,7 +32,7 @@
 	<parentCategory ref="Configuration"/>
 	<supportedOn ref="SupportedOn"/>
 	<elements>
-        <list id="List" key="SOFTWARE\Policies\weatherlights.com\Winget-AutoUpdate\List"/>
+        <list id="List" key="SOFTWARE\Policies\weatherlights.com\Winget-AutoUpdate\List" valuePrefix=""/>
 	</elements>
 </policy>
 
